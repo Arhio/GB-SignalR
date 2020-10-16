@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntroSignalR", "IntroSignalR\IntroSignalR.csproj", "{5722AA5A-8B4E-4B40-A2D2-FDE15D343190}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientSR", "ClientSR\ClientSR.csproj", "{B4BB9056-A6DA-4947-9015-52E6F0439205}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5722AA5A-8B4E-4B40-A2D2-FDE15D343190}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5722AA5A-8B4E-4B40-A2D2-FDE15D343190}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5722AA5A-8B4E-4B40-A2D2-FDE15D343190}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5722AA5A-8B4E-4B40-A2D2-FDE15D343190}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4BB9056-A6DA-4947-9015-52E6F0439205}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4BB9056-A6DA-4947-9015-52E6F0439205}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4BB9056-A6DA-4947-9015-52E6F0439205}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4BB9056-A6DA-4947-9015-52E6F0439205}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {313453E3-14E2-41C3-9688-AC2B91AE3F8F}
+	EndGlobalSection
+EndGlobal
