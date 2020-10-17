@@ -1,0 +1,51 @@
+﻿<Window x:Class="ClientWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:ViewModels="clr-namespace:ClientWPF.ViewModels"
+        xmlns:local="clr-namespace:ClientWPF"
+        mc:Ignorable="d"
+        Title="Main" Height="450" Width="800" x:Name="Main">
+    <Window.DataContext>
+        <ViewModels:ViewModelClient/>
+    </Window.DataContext>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="80"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Row="0" Text="State: " Margin="4" VerticalAlignment="Center"/>
+            <TextBlock Grid.Row="0" Text="{Binding StateConnection, NotifyOnSourceUpdated=True, Mode=OneWay}" Foreground="{Binding StateConnectionColor, NotifyOnSourceUpdated=True, Mode=OneWay}" Margin="35,0,80,0" VerticalAlignment="Center" />
+            <Button Grid.Row="0" Margin="120,2,10,2" Command="{ Binding Connect_Command}" CommandParameter="{ Binding ElementName=Main }">
+                <TextBlock Text="{Binding NameMethodConnect}"></TextBlock>
+            </Button>
+            <TextBlock Grid.Row="1" Text="Name:" Margin="4" VerticalAlignment="Center"/>
+            <TextBox Grid.Row="1" Margin="50,2,10,2" Text="{Binding NameSetClient, NotifyOnSourceUpdated=True, Mode=TwoWay}" />
+
+            <Button Grid.Row="2" Margin="120,2,10,2" Command="{Binding SetName_Command}" CommandParameter="{ Binding ElementName=Main }">
+                <TextBlock Text="Set"/>
+            </Button>
+            <Button Grid.Row="2" Margin="45,2,85,2" Command="{Binding GetName_Command}" CommandParameter="{ Binding ElementName=Main }">
+                <TextBlock Text="Get"/>
+            </Button>
+
+            <TextBlock Grid.Row="3" Text="Text:" Margin="4"/>
+            <TextBox Grid.Row="3" Margin="30,5,10,5" Text="{Binding BodyMessage, NotifyOnSourceUpdated=True, Mode=TwoWay}" />
+            <Button Grid.Row="4" Margin="120,2,10,2" Command="{Binding Send_Command}" CommandParameter="{ Binding ElementName=Main }">
+                <TextBlock Text="Send"/>
+            </Button>
+        </Grid>
+        <TextBox Grid.Column="1" Margin="5,5,5,5" Text="{Binding MessageBox, NotifyOnSourceUpdated=True, Mode=OneWay}"/>
+    </Grid>
+</Window>

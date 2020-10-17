@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "dU1nR6KfbzptVr6SoCiDA//zzgx19z/SjsJggwsHPbPrk2wgYaiTs2AjySx2H8bVhP8h8Va4UXvBUrWk4Mq5Yg==",
+  "success": true,
+  "projectFilePath": "C:\\Git\\GB-SignalR\\Lesson-3\\Client\\Common\\Common.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Виктор\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Виктор\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
